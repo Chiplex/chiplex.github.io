@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/custom.css" />
     <noscript><link rel="stylesheet" href="public/css/noscript.css" /></noscript>
-    <title>Chiplex</title>
+    <title>Chiplex | Experiencia</title>
 </head>
 <body class="is-preload">
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Main -->
-		<div id="main">
-			<header>
-				<span class="avatar"><img src="public/images/avatar.jpg" alt="" style="width: 200px;"/></span>
-				<h1>Alexandro Arce</h1>
-				<h2>Experiencia</h2>
-            </header>
-            <p>La Douche Línea integral de hidromasajes</p><p>Octubre 2017 - Noviembre 2017</p>
-            <hr>
-            <p>Mutualidad Tte. Gral. German Busch</p><p>Junio 2016 - Febrero 2017</p>
-            <a href="./profile.html">Perfil</a><br>
-			<a href="./skill.html">Habilidades</a> -
-            <a href="./index.html">Inicio</a>
-		</div>
-		<!-- Footer -->
-		<footer id="footer">
-		</footer>
-	</div>
+<div id="wrapper">
+    <div id="main" class="portfolio">
+        <section class="hero reveal">
+            <h1>Experiencia Profesional</h1>
+            <p>Trayectoria en desarrollo y soluciones tecnológicas.</p>
+        </section>
 
-	<!-- Scripts -->
-	<script>
-		if ('addEventListener' in window) {
-			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-		}
-	</script>
-</body> 
+        <article class="card reveal">
+            <ul class="timeline">
+                <li><strong>La Douche</strong><br><small>Línea integral de hidromasajes</small><br><small>Octubre 2017 - Noviembre 2017</small></li>
+                <li><strong>Mutualidad Tte. Gral. German Busch</strong><br><small>Junio 2016 - Febrero 2017</small></li>
+            </ul>
+        </article>
+
+        <nav class="top-nav reveal">
+            <a href="./index.html">Inicio</a>
+            <a href="./profile.html">Perfil</a>
+            <a href="./skill.html">Habilidades</a>
+        </nav>
+    </div>
+    <footer id="footer"></footer>
+</div>
+<script src="public/js/portfolio.js"></script>
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+</body>
 </html>

@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/custom.css" />
     <noscript><link rel="stylesheet" href="public/css/noscript.css" /></noscript>
-    <title>Chiplex</title>
+    <title>Chiplex | Perfil</title>
 </head>
 <body class="is-preload">
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Main -->
-		<div id="main">
-			<header>
-				<span class="avatar"><img src="public/images/avatar.jpg" alt="" style="width: 200px;"/></span>
-				<h1>Alexandro Arce</h1>
-				<h2>Perfil</h2>
-            </header>
-            <p>Soy estudiante de Ingenieria de sistemas, me caracterizo por mi Lealtad, Diligencia y Perseverancia. Planifico a corto plazo, con ritmo constante, bajo presion me adapto con el equipo, la desorganizacion no va conmmigo, soy efectivo cuando existe retroalimentación con metodos sencillos y rapidos.</p>
-			<ul class="icons">
-				<li><a href="https://www.facebook.com/elchiplex" class="fa-facebook">Facebook</a></li>
-				<li><a href="https://github.com/Chiplex" class="fa-github">Github</a></li>
-				<li><a href="https://www.youtube.com/channel/UCvYSOZBRkltif0qOAjCYNMA" class="fa-youtube">Youtube</a></li>								
-			</ul>
-			<a href="./index.html">Inicio</a><br>
-			<a href="./skill.html">Habilidades</a> -
-			<a href="./experience.html">Experiencia</a>
-		</div>
-		<!-- Footer -->
-		<footer id="footer">
-		</footer>
-	</div>
+<div id="wrapper">
+    <div id="main" class="portfolio">
+        <section class="hero reveal">
+            <span class="avatar"><img src="public/images/avatar.jpg" alt="Foto de Alexandro Arce" style="width: 180px;"/></span>
+            <h1>Perfil de Alexandro Arce</h1>
+            <p>Lealtad, diligencia y perseverancia como base de cada proyecto.</p>
+        </section>
 
-	<!-- Scripts -->
-	<script>
-		if ('addEventListener' in window) {
-			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-		}
-	</script>
-</body> 
+        <article class="card reveal">
+            <h3>Sobre mí</h3>
+            <p>Soy estudiante de Ingeniería de Sistemas con enfoque backend. Planifico a corto plazo con constancia, me adapto bien al trabajo bajo presión y priorizo la organización y la colaboración del equipo para entregar resultados reales.</p>
+            <p>Me gusta trabajar con métodos simples, rápidos y bien estructurados, buscando siempre mejorar a través de la retroalimentación.</p>
+        </article>
+
+        <nav class="top-nav reveal">
+            <a href="./index.html">Inicio</a>
+            <a href="./skill.html">Habilidades</a>
+            <a href="./experience.html">Experiencia</a>
+        </nav>
+    </div>
+    <footer id="footer"></footer>
+</div>
+<script src="public/js/portfolio.js"></script>
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+</body>
 </html>
