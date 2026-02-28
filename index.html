@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portafolio de Alexandro Arce - Backend Developer">
     <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/custom.css" />
     <noscript><link rel="stylesheet" href="public/css/noscript.css" /></noscript>
-	<title>Chiplex</title>
-	<style>
-		p{
-			
-		}
-	</style>
+    <title>Chiplex | Portafolio</title>
 </head>
 <body class="is-preload">
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Main -->
-		<div id="main">
-			<header>
-				<span class="avatar"><img src="public/images/avatar.jpg" alt="" style="width: 200px;"/></span>
-				<h1>Alexandro Arce</h1>
-				<p>Developer backend</p>
-			</header>
-			<ul class="icons">
-				<li><a href="https://www.facebook.com/elchiplex" class="fa-facebook">Facebook</a></li>
-				<li><a href="https://github.com/Chiplex" class="fa-github">Github</a></li>
-				<li><a href="https://www.youtube.com/channel/UCvYSOZBRkltif0qOAjCYNMA" class="fa-youtube">Youtube</a></li>								
-			</ul>
-			<a href="./profile.html">Perfil</a><br>
-			<a href="./skill.html">Habilidades</a> -
-			<a href="./experience.html">Experiencia</a>
-		</div>
-		<!-- Footer -->
-		<footer id="footer">
-		</footer>
-	</div>
+    <div id="wrapper">
+        <div id="main" class="portfolio">
+            <section class="hero reveal">
+                <span class="avatar"><img src="public/images/avatar.jpg" alt="Foto de Alexandro Arce" style="width: 200px;"/></span>
+                <h1>Alexandro Arce <span class="highlight">(Chiplex)</span></h1>
+                <p>Backend Developer | Ingeniería de Sistemas | Construyendo soluciones con enfoque en resultados.</p>
+                <div class="cta-wrapper">
+                    <a class="cta" href="./contact.json">Contacto</a>
+                    <a class="cta" href="https://github.com/Chiplex" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </section>
 
-	<!-- Scripts -->
-	<script>
-		if ('addEventListener' in window) {
-			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-		}
-	</script>
-</body> 
+            <section class="portfolio-grid reveal">
+                <article class="card">
+                    <h3>Perfil profesional</h3>
+                    <p>Soy estudiante de Ingeniería de Sistemas. Me caracterizan la lealtad, diligencia y perseverancia. Trabajo con ritmo constante, me adapto bajo presión y valoro la retroalimentación para mejorar continuamente.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Tecnologías clave</h3>
+                    <div class="skills">
+                        <span>SQL Server</span><span>C#</span><span>C++</span><span>Java</span>
+                        <span>JavaScript</span><span>PHP</span><span>Laravel</span><span>CodeIgniter</span>
+                        <span>Ionic</span><span>Angular</span><span>Vue</span><span>React</span>
+                        <span>GraphQL</span><span>MySQL</span><span>Git</span><span>Webpack</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Experiencia</h3>
+                    <ul class="timeline">
+                        <li><strong>La Douche</strong><br><small>Línea integral de hidromasajes · Oct 2017 - Nov 2017</small></li>
+                        <li><strong>Mutualidad Tte. Gral. German Busch</strong><br><small>Jun 2016 - Feb 2017</small></li>
+                    </ul>
+                </article>
+            </section>
+
+            <ul class="icons reveal">
+                <li><a href="https://www.facebook.com/elchiplex" class="fa-facebook" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://github.com/Chiplex" class="fa-github" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="https://www.youtube.com/channel/UCvYSOZBRkltif0qOAjCYNMA" class="fa-youtube" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+            </ul>
+
+            <nav class="top-nav reveal">
+                <a href="./profile.html">Perfil detallado</a>
+                <a href="./skill.html">Habilidades</a>
+                <a href="./experience.html">Experiencia</a>
+            </nav>
+        </div>
+
+        <footer id="footer"></footer>
+    </div>
+
+    <script src="public/js/portfolio.js"></script>
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+</body>
 </html>

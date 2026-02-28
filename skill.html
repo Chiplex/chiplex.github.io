@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/custom.css" />
     <noscript><link rel="stylesheet" href="public/css/noscript.css" /></noscript>
-    <title>Chiplex</title>
+    <title>Chiplex | Habilidades</title>
 </head>
 <body class="is-preload">
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Main -->
-		<div id="main">
-			<header>
-				<span class="avatar"><img src="public/images/avatar.jpg" alt="" style="width: 200px;"/></span>
-				<h1>Alexandro Arce</h1>
-				<h2>Habilidades</h2>
-            </header>
-            <p>SQL Server, C#, C++, JAVA, EcmaScript, MatLAB, PHP, Laravel, Codeigniter, Ionic, Angular 4, MySQL, GraphQL, VueJS, React, Babel, Webpack, GIT</p>             		
-            <a href="./profile.html">Perfil</a><br>
-			<a href="./index.html">Inicio</a> -
-			<a href="./experience.html">Experiencia</a>
-		</div>
-		<!-- Footer -->
-		<footer id="footer">
-		</footer>
-	</div>
+<div id="wrapper">
+    <div id="main" class="portfolio">
+        <section class="hero reveal">
+            <h1>Habilidades Técnicas</h1>
+            <p>Stack orientado al desarrollo web y backend moderno.</p>
+        </section>
 
-	<!-- Scripts -->
-	<script>
-		if ('addEventListener' in window) {
-			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-		}
-	</script>
-</body> 
+        <article class="card reveal">
+            <div class="skills">
+                <span>SQL Server</span><span>MySQL</span><span>C#</span><span>C++</span><span>Java</span>
+                <span>JavaScript</span><span>PHP</span><span>Laravel</span><span>CodeIgniter</span>
+                <span>Ionic</span><span>Angular 4</span><span>VueJS</span><span>React</span>
+                <span>GraphQL</span><span>Babel</span><span>Webpack</span><span>Git</span>
+                <span>MatLAB</span>
+            </div>
+        </article>
+
+        <nav class="top-nav reveal">
+            <a href="./index.html">Inicio</a>
+            <a href="./profile.html">Perfil</a>
+            <a href="./experience.html">Experiencia</a>
+        </nav>
+    </div>
+    <footer id="footer"></footer>
+</div>
+<script src="public/js/portfolio.js"></script>
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+</body>
 </html>
